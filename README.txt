@@ -1,0 +1,1 @@
+Instruções: extraia em htdocs/expressa, importe Expressa_full.sql no phpMyAdmin, ajuste db.php se necessário, garanta permissão de escrita em uploads/.

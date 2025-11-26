@@ -1,0 +1,59 @@
+<!-- explore.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Expressa+ — Explorar</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="container">
+    <div class="logo"><img src="assets/images/logo.png" alt="Expressa+" class="logo-img"></div>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="explore.html">Explorar</a> |
+      <a href="login.html">Entrar</a> |
+      <a href="register.html">Cadastrar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="titulo-pagina">Explorar</h1>
+
+    <section class="barra-filtros">
+      <form method="get" action="index.php" class="filters-form" style="display:flex;gap:8px">
+        <input name="q" class="filtro-input" placeholder="Pesquisar descrição ou usuário">
+        <input name="tag" class="filtro-input" placeholder="Tag (ex: digital, paisagem)">
+        <select name="filter" class="filtro-input" style="max-width:170px">
+          <option value="">Ordenar</option>
+          <option value="recent">Mais recentes</option>
+        </select>
+        <button class="btn-filtrar" type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section class="grid" id="feed">
+      <!-- Cards são gerados pelo PHP no index.php; aqui apenas exemplo estático -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="uploads/default.png" alt="obra exemplo">
+        </div>
+        <div class="meta">
+          <strong>@artista</strong>
+          <p>Descrição curta da obra — exemplo.</p>
+          <p class="tags">digital, colorido</p>
+          <div class="acoes">
+            <button class="btn btn-curtir" data-id="1">Curtir</button>
+            <input class="comment-input" placeholder="Comentar..." data-id="1">
+            <button class="btn btn-comentar" data-id="1">Enviar</button>
+          </div>
+        </div>
+      </article>
+      <!-- Fim exemplo -->
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

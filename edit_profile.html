@@ -1,0 +1,56 @@
+<!-- edit_profile.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Expressa+ — Editar Perfil</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <main class="container">
+    <div class="form-box">
+
+      <h2>Editar Perfil</h2>
+
+      <!-- IMPORTANTE: enctype precisa estar correto -->
+      <form method="post" enctype="multipart/form-data" action="edit_profile.php">
+
+        <!-- Avatar -->
+        <label>Avatar (circular)</label>
+        <input
+            type="file"
+            name="avatar"
+            accept="image/*"
+            class="input-file"
+            style="color:black;"
+        >
+
+        <!-- Biografia -->
+        <label>Biografia</label>
+        <textarea
+            name="biografia"
+            placeholder="Fale sobre você"
+        ></textarea>
+
+        <!-- Contato -->
+        <label>Meio de contato (ex: @instagram, telegram...)</label>
+        <input
+            type="text"
+            name="meioContato"
+            placeholder="@contato"
+        >
+
+        <!-- Botão -->
+        <button class="btn-purple" type="submit">Salvar</button>
+
+      </form>
+
+    </div>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+

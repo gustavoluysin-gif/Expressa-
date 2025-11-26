@@ -1,0 +1,30 @@
+<!-- post.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Expressa+ — Publicar</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="form-box">
+      <h2>Postar imagem</h2>
+      <form action="upload_handler.php" method="post" enctype="multipart/form-data">
+        <label>Imagem</label>
+        <input type="file" name="image" accept="image/*" required>
+        <label>Título</label>
+        <input name="titulo" placeholder="Título da obra" required>
+        <label>Descrição</label>
+        <textarea name="descricao" placeholder="Descricão da obra"></textarea>
+        <label>Tags (vírgula separa)</label>
+        <input name="tags" placeholder="digital, paisagem">
+        <label><input type="checkbox" name="is_adult" value="1"> Conteúdo adulto (18+)</label>
+        <button type="submit">Publicar</button>
+      </form>
+    </div>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
